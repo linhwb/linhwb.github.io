@@ -15,17 +15,23 @@ p{
 }
 .head{
   width: 100%; 
-  padding: 0 120px;
   display: flex;
+  flex-wrap: nowrap;
   color: black;
   font-family:  "Montserrat", Sans-serif;
   text-transform: uppercase;
 }
-.left-head,.right-head{
+.left-head{
   flex: 50%;
-  height: 70px;
-  padding: 10px;  
-  line-height: 50px;
+  padding-left:  120px;
+  height: 70px;  
+  line-height: 70px;
+}
+.right-head{
+  flex: 50%;
+  padding-right:  120px;
+  height: 70px;  
+  line-height: 70px;
 }
 .left-head a{
   text-decoration: none;
@@ -35,14 +41,13 @@ p{
 .left-head a:hover{
   font-size: 30px;
 }
-li{
-  list-style: none;
-}
 .right-head ul{ 
+  width: 100%;
   display: flex;
   justify-content: flex-end;
 }
 .right-head ul li{
+  list-style: none;
   margin-left: 30px;
 }
 .right-head a{
@@ -162,19 +167,21 @@ li{
 }
 .under-content-intro{
   margin-top  : 10px ;
-  text-align:   center;
+  text-align: center;
   word-wrap: break-word;
-  padding: 0 150px;
+  width: 100%;
+  padding: 0 auto;
 }   
 .under-content-intro img{
   border-radius: 50%;
   margin-bottom:  12px;
-  width:  180px;
-  height:   180px;
+  width:  200px;
+  height:   200px;
 }
 .under-content-post{
   margin-top  : 50px;
-  padding: 0 150px;
+  width: 100%;
+  padding: 0 auto;
 } 
 .post{
   font-size: 24px;
@@ -186,8 +193,9 @@ li{
 }
 .under-content-inform{
   margin-top  : 50px;
-  padding: 0 150px;
-  align-items: center;
+  width: 100%;
+  padding: 0 auto;
+  text-align: center;
 }
 .inform{
   text-align: left;
@@ -224,7 +232,8 @@ li{
 }
 .right-content-connect{
   margin-top  : 50px;
-  padding: 0 150px;
+  width: 100%;
+  padding: 0 auto;
 }
 .connect{
   font-size: 24px;
@@ -235,7 +244,7 @@ li{
   width: 100%;
 }
 .connect a{
-  margin: 10px 30px;
+  margin: 10px 50px;
 }
 .fab,.fas{
   color: black;
@@ -258,27 +267,74 @@ li{
 
 /*fit another device*/
 @media(max-width: 800px){
-  .left-content{
-    flex: 100%;
+  .head{
+    flex-wrap: nowrap;
   }
-  .right-content{
-    flex: 100%;
+  .left-head{
+    flex: 50%;
+    padding-left: 30px;
+    text-align: left;
   }
-  .content{
+  .right-head{
+    flex: 50%;
+    padding-right: 30px;
+    text-align: center;
+  }
+  .right-head ul li{ 
+    margin:  0 auto;
+    margin-right: 0;
+  }
+  .upper-content{
+    padding: 0 20px;
+    background-color: #f2f2f2;
+  }
+  #course_container{
     flex-wrap: wrap;
   }
-  .read_item{
-    flex: 50%;
+  .course_item{
+  text-align: center;
+  flex: 50%;
+  margin: 20px 0 ;
+  }
+  .under-content{
+    padding: 10px 30px;
   }
 }
 @media(max-width: 400px){
-  .left-head,.right-head{
-    flex: 100%;
-  }
-  .content{
+  .head{
     flex-wrap: wrap;
   }
-  .read_item{
+  .left-head{
     flex: 100%;
+    padding: 0 50px;
+    text-align: center;
+    color: #006666;
+  }
+  .right-head{
+    flex: 100%;
+    padding: 0 50px;
+    text-align: center;
+    background-color: #e6ffff;
+  }
+  .right-head ul li{ 
+    margin:  0 auto;
+  }
+  .upper-content{
+    padding: 0 20px;
+    background-color: #f2f2f2;
+  }
+  #course_container{
+    flex-wrap: wrap;
+  }
+  .course_item{
+  text-align: center;
+  flex: 100%;
+  margin: 20px 0 ;
+  }
+  .under-content{
+    padding: 10px;
+  }
+  .connect a{
+    margin: 30px;
   }
 }
