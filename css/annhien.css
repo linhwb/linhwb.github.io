@@ -1,0 +1,271 @@
+*{
+	margin: 0;
+	padding: 0;
+	border-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif ;
+}
+p{
+	font-size: 	14px;
+	font-family:'Roboto Slab', sans-serif;
+}
+/*HeaderHeaderHeaderHeaderHeaderHeaderHeaderHeaderHeaderHeaderHeader*/
+.head{
+	width: 100%;
+	display: inline-block;
+	color: #c6ecc6;
+	font-size: 18px;
+	font-family: 	'Roboto Slab', sans-serif;
+}
+.left-head{
+	float: left;
+	height: 100%;
+	padding-left: 100px;
+}
+.right-head{
+	float: right;
+	height: 85px;
+	line-height: 85px;
+	padding-right: 100px;
+}
+.head img{
+	width: 250px;
+	height: 85px;
+}
+
+/*NavbarNavbarNavbarNavbarNavbarNavbarNavbarNavbarNavbarNavbarNavbarNavbar*/
+li{
+	list-style: none;
+}
+.nav{
+	width: 100%;	
+	align-items: center;
+	font-family: fantasy;
+	text-transform: uppercase;
+	background-color: #00b300;
+	color: white;
+	font-size: 18px;
+}
+.menu{
+	display: flex;
+	justify-content: space-around;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 50px;
+	position: relative;
+}
+.menu a,.sub-menu a{
+	text-decoration: none;
+	color: 	white;
+}
+.menu li:hover,.menu a:hover{
+	color: #e6e6e6;
+	cursor: pointer;
+}
+.sub-menu{
+	border: none;
+	padding: 0 20px 10px 10px;
+	background-color: #00cc00;
+	text-transform: capitalize;
+	position: absolute;
+	display: none;
+}
+.sub-menu li{
+	height:28px;
+	margin: 10px 0;
+	line-height: 28px;
+}
+.sub-menu a:hover{
+	color: #d9d9d9;
+}
+.menu li:hover .sub-menu{
+	display: block;
+}
+
+.searchbar-container input[type=search]{
+	height: 40px;
+	width: 200px;
+	line-height: 40px;
+	padding: 0 10px;
+	border-radius: 2px;
+	border: none;
+	font-size: 16px;
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/*contentcontentcontentcontentcontentcontentcontentcontentcontent*/
+.content{
+	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+}
+.left-content{
+	flex: 70%;
+	padding: 10px 50px 50px 100px;
+}
+.baidoc{
+	margin-top	: 50px ;
+	display: inline-block;
+}
+/*.anh-left{
+	flex: 30%;
+}*/
+.anh-left{
+	float: left;
+	width: 200px;
+	height: 	200px;
+}
+.anh-left img{
+	width: 100%;
+	height: 100%;
+}
+.desc-right{
+	float: right;
+	width: 479px;
+	height: 200px;
+	margin-left: 20px;
+}
+.desc-right .h3,.desc-right .note,.desc-right .limit,.desc-right .docthem{
+	margin: 	10px 0;
+}
+.desc-right h3 a,.desc-right .note a{
+	text-decoration: 	none;
+	color: black;
+}
+.docthem a{
+	color: #4d9900;
+}
+.note a:after,.note .datetime:after{
+     content: ' \01C0';
+}
+.limit{
+	word-wrap: break-word;
+}
+.desc-right h3 a:hover,.desc-right .note a:hover{
+	color: 	#4d9900;
+}
+.note ul {
+	display: flex	;
+}
+.left-content button{
+	margin-top	: 50px;
+	height: 50px;
+	width: 	100%;
+	border: none;
+	cursor: pointer	;
+	border: 	1px solid	#f5f6f6;
+	background-color: #e6e6e6;
+	font-family: fantasy;
+	font-weight: bold;
+	font-size: 18.72px;
+	color: #404040	;
+}
+.left-content button:hover{
+	background-color: #d9d9d9;
+}
+.desc ul{
+	display: flex;
+}
+.right-content{
+  flex: 30%;
+  padding: 10px 100px 50px 50px;
+  display:  block;
+}
+.right-content h2,.right-content h3 {
+	color:#4d9900;
+}
+.right-content h4{
+	color: gray;
+}
+.right-content-intro{
+	margin-top	: 50px ;
+	text-align: 	center;
+	word-wrap: break-word;
+}		
+.right-content-intro img{
+	border-radius: 50%;
+	margin-bottom: 	12px;
+	width: 	180px;
+	height: 	180px;
+}
+.right-content-post{
+	margin-top	: 50px;
+}	
+.post{
+	font-size: 24px;
+	text-align: center;
+	border: 1px solid gray;
+	height: 44px;
+	line-height: 44px;
+	width: 100%;
+}
+.right-content-inform{
+	margin-top	: 50px;
+}
+.inform{
+	text-align: left;
+	width: 100%;
+}
+#name{
+  height:34px;
+  width: 100%;
+  line-height: 34px;
+  border: none;
+  background-color: #f5f6f6;
+  margin-bottom: 10px;
+  resize:   none;
+  outline:  none;
+}
+.btnSubmit{
+	text-align: right;
+}
+.btnSubmit input[type=submit]{
+	margin-top: 5px;
+  padding:  10px 15px;
+  border:   none;
+  outline:  none;
+  text-transform:  uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  cursor:   pointer;
+  color:  gray;
+}
+#submit{
+	cursor: pointer;
+}
+.right-content-connect{
+	margin-top	: 50px;
+}
+.connect{
+	font-size: 24px;
+	text-align: center;
+	border: 1px solid gray;
+	height: 44px;
+	line-height: 44px;
+	width: 100%;
+}
+.connect a{
+	margin: 10px;
+}
+.fab,.fas{
+	color: #404040;
+}
+/*footerfooterfooterfooterfooterfooterfooterfooterfooter*/
+.foot{
+	width: 100%;
+	background-color: #001a0d;
+	color: white;
+	text-align: center;
+	font-size: 14px;
+	font-family: fantasy;
+	color: white ;
+	line-height: 30px;
+}
+.foot a{
+	color: white;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
