@@ -272,6 +272,9 @@ li{
   }
 }
 @media(max-width: 400px){
+  .left-head,.right-head{
+    flex: 100%;
+  }
   .content{
     flex-wrap: wrap;
   }
